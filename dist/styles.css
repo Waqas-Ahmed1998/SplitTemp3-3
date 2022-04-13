@@ -481,6 +481,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: auto;
 }
 
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
 .mb-3 {
   margin-bottom: 0.75rem;
 }
@@ -501,8 +505,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 1.25rem;
 }
 
-.mt-6 {
-  margin-top: 1.5rem;
+.mt-1 {
+  margin-top: 0.25rem;
 }
 
 .block {
@@ -513,8 +517,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: flex;
 }
 
-.h-\[90vh\] {
-  height: 90vh;
+.aspect-video {
+  aspect-ratio: 16 / 9;
 }
 
 .w-full {
@@ -529,6 +533,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-\[95\%\] {
   width: 95%;
+}
+
+.w-\[90\%\] {
+  width: 90%;
 }
 
 .cursor-pointer {
@@ -590,6 +598,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: transparent;
 }
 
+.border-gray-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(107 114 128 / var(--tw-border-opacity));
+}
+
 .bg-transparent {
   background-color: transparent;
 }
@@ -597,6 +610,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-\[\#239839\] {
   --tw-bg-opacity: 1;
   background-color: rgb(35 152 57 / var(--tw-bg-opacity));
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-1 {
+  padding: 0.25rem;
 }
 
 .py-10 {
@@ -737,7 +758,15 @@ input {
   background-color: rgba(10, 10, 10, 0.5);
 }
 
-/* fonts  */
+.video-heading {
+  font-family: 'Lato', sans-serif;
+}
+
+.bullet-heading {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*/* fonts  */
 
 /*font-family: 'Anton', sans-serif;
 font-family: 'Anybody', cursive;
@@ -750,6 +779,7 @@ font-family: 'Libre Baskerville', serif;
 font-family: 'Lobster', cursive;
 font-family: 'Merriweather', serif;
 font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
 font-family: 'Oswald', sans-serif;
 font-family: 'Permanent Marker', cursive;
 font-family: 'Poppins', sans-serif;
@@ -759,6 +789,7 @@ font-family: 'Rubik Bubbles', cursive;
 font-family: 'Send Flowers', cursive;
 font-family: 'Source Sans Pro', sans-serif;
 font-family: 'Tajawal', sans-serif;
+font-family: 'Ubuntu', sans-serif;
 font-family: 'Vazirmatn', sans-serif;*/
 
 .hover\:bg-\[\#447d4f\]:hover {
@@ -799,16 +830,18 @@ font-family: 'Vazirmatn', sans-serif;*/
     margin-top: 3.5rem;
   }
 
-  .md\:h-screen {
-    height: 100vh;
-  }
-
   .md\:w-\[90\%\] {
     width: 90%;
   }
 
   .md\:w-\[80\%\] {
     width: 80%;
+  }
+
+  .md\:w-fit {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
 
   .md\:max-w-\[1120px\] {
@@ -832,6 +865,11 @@ font-family: 'Vazirmatn', sans-serif;*/
   .md\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
+  }
+
+  .md\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   .md\:text-3xl {
